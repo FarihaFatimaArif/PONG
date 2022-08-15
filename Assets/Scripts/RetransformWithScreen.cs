@@ -20,10 +20,10 @@ public class RetransformWithScreen : MonoBehaviour
 
     void RetransformWalls()
     {
-        walls[0].transform.position = new Vector3(0, height);
+        walls[0].transform.position = new Vector3(0, height+0.2f);
         walls[0].transform.localScale = new Vector3(width * 2, 0.5f);
 
-        walls[1].transform.position = new Vector3(0, -height);
+        walls[1].transform.position = new Vector3(0, -(height+0.2f));
         walls[1].transform.localScale = new Vector3(width * 2, 0.5f);
 
         walls[2].transform.position = new Vector3(width, 0);

@@ -25,16 +25,6 @@ public class AIPaddle : Paddle
                 RigidBody.AddForce(Vector2.left * this.Speed);
             }
         }
-        else
-        {
-            if (this.Ball.transform.position.x > 0)
-            {
-                RigidBody.AddForce(Vector2.left * this.Speed);
-            }
-            else if (this.Ball.transform.position.x < 0)
-            {
-                RigidBody.AddForce(Vector2.right * this.Speed);
-            }
-        }
+        
     }
 }
